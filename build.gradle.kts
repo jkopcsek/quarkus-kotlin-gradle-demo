@@ -20,14 +20,13 @@ group = "qkg.demo"
 version = "1.0-SNAPSHOT"
 
 repositories {
-    mavenLocal()
     mavenCentral()
+    mavenLocal()
 }
 
 quarkus {
-    setSourceDir("src/main/kotlin")
-    resourcesDir().add(File("src/main/resources"))
-    setOutputDirectory("build/classes/kotlin/main")
+    setSourceDir(project.projectDir.resolve("src/main/kotlin").absolutePath)
+    setOutputDirectory(project.buildDir.resolve("classes/kotlin/main").absolutePath)
 }
 
 dependencies {

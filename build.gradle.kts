@@ -34,6 +34,7 @@ dependencies {
     implementation(enforcedPlatform("io.quarkus:quarkus-bom:0.15.0"))
     implementation("io.quarkus:quarkus-kotlin")
     implementation("io.quarkus:quarkus-resteasy-jsonb")
+    implementation("io.quarkus:quarkus-swagger-ui")
 }
 
 tasks.withType<KotlinCompile> {
